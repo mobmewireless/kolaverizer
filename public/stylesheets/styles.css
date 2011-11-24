@@ -25,6 +25,11 @@ width:600px;
 border-radius: 5px;
 }
 
+#input {
+	width:635px;
+	margin: auto;
+}
+
 .button{
 background:url(../images/button.jpg) no-repeat;
 width:116px;

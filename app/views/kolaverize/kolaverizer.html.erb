@@ -18,9 +18,11 @@
       </div>
     </div>
   <% else %>
+    <div id="input">
     <%= form_tag("/kolaverizer", :method => "post" ) do %>
       <textarea name="input_text" class="textarea"  rows="15"></textarea>
       <%= submit_tag("Submit",:name => 'button',:class =>'button') %>
     <% end %>
+    </div>
   <% end %>
 </div>
