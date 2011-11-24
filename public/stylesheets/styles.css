@@ -30,6 +30,10 @@ border-radius: 5px;
 	margin: auto;
 }
 
+#input a {
+	color: white;
+}
+
 .button{
 background:url(../images/button.jpg) no-repeat;
 width:116px;
@@ -41,7 +45,9 @@ font-size:0px;
 background:#e09736;
 width: 100%;
 padding: 20px 0px;
-    
+}
+#result a  {
+	color:black;
 }
 .box {
 	width:40%; float: left; padding: 10px

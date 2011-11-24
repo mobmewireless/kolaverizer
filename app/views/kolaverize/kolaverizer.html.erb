@@ -7,10 +7,8 @@
           <div class="box">
             <strong>the kolaveri version</strong>
             <pre><%= @output %></pre>
-          </div>
-          <div class="box">
-            <strong>what you typed...</strong>
-            <pre><%= @input %></pre>
+            
+            <p><%= link_to("/") { "Do another?" } %></p>
           </div>
           <div style="clear:both">
           </div>
@@ -19,6 +17,7 @@
     </div>
   <% else %>
     <div id="input">
+    <p>You mama, try <a href="http://lyrics.wikia.com/" target="_blank">some song lyrics</a></p>
     <%= form_tag("/kolaverizer", :method => "post" ) do %>
       <textarea name="input_text" class="textarea"  rows="15"></textarea>
       <%= submit_tag("Submit",:name => 'button',:class =>'button') %>
