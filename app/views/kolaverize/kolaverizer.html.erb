@@ -1,26 +1,26 @@
-
-
-<% unless @input_text.nil? %>
-
-  <div id="result">
-    <div class="main">
-      <div class="result_main"><%=@input_text%></div>
-    </div>
-  </div>
-
-<% end %>
-
-
 <div class="main">
   <div id="header"></div>
-  <%= form_tag("/kolaverizer", :method => "post" ) do %>
-    <textarea name="input_text" class="textarea"  rows="15"></textarea>
-
-
-    <%= submit_tag("Submit",:name => 'button',:class =>'button') %>
-
+  <% if @output %>
+    <div id="result">
+      <div class="main">
+        <div class="result_main">
+          <div class="box">
+            <strong>the kolaveri version</strong>
+            <pre><%= @output %></pre>
+          </div>
+          <div class="box">
+            <strong>what you typed...</strong>
+            <pre><%= @input %></pre>
+          </div>
+          <div style="clear:both">
+          </div>
+        </div>
+      </div>
+    </div>
+  <% else %>
+    <%= form_tag("/kolaverizer", :method => "post" ) do %>
+      <textarea name="input_text" class="textarea"  rows="15"></textarea>
+      <%= submit_tag("Submit",:name => 'button',:class =>'button') %>
+    <% end %>
   <% end %>
-
-
-
 </div>

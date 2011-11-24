@@ -7,14 +7,15 @@ color: #fff;
 font-family: sans-serif;
 }
 .main{
-width:635px;
+width:800px;
 margin:auto;
 }
  
 #header{
-width:635px;
+width:800px;
 height:485px;
 background:url(../images/header.jpg) no-repeat;
+background-position: center;
 }
 .textarea{
 font-size:18px;
@@ -36,4 +37,7 @@ background:#e09736;
 width: 100%;
 padding: 20px 0px;
     
+}
+.box {
+	width:40%; float: left; padding: 10px
 }
