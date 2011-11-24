@@ -1,0 +1,2 @@
+module KolaverizeHelper
+end

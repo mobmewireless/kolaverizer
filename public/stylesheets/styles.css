@@ -1,0 +1,39 @@
+/* CSS Document */
+body{
+margin:0;
+padding:0;
+background:#141212;
+color: #fff;
+font-family: sans-serif;
+}
+.main{
+width:635px;
+margin:auto;
+}
+ 
+#header{
+width:635px;
+height:485px;
+background:url(../images/header.jpg) no-repeat;
+}
+.textarea{
+font-size:18px;
+width:600px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+.button{
+background:url(../images/button.jpg) no-repeat;
+width:116px;
+height:34px;
+border:0;
+font-size:0px;
+}
+#result{
+background:#e09736;
+width: 100%;
+padding: 20px 0px;
+    
+}

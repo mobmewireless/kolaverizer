@@ -1,0 +1,26 @@
+
+
+<% unless @input_text.nil? %>
+
+  <div id="result">
+    <div class="main">
+      <div class="result_main"><%=@input_text%></div>
+    </div>
+  </div>
+
+<% end %>
+
+
+<div class="main">
+  <div id="header"></div>
+  <%= form_tag("/kolaverizer", :method => "post" ) do %>
+    <textarea name="input_text" class="textarea"  rows="15"></textarea>
+
+
+    <%= submit_tag("Submit",:name => 'button',:class =>'button') %>
+
+  <% end %>
+
+
+
+</div>
