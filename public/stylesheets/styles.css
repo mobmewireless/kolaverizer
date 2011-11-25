@@ -42,13 +42,18 @@ border:0;
 font-size:0px;
 }
 #result{
-background:#e09736;
+background:#be7b22;
 width: 100%;
 padding: 20px 0px;
+margin: 25px 0px;
 }
 #result a  {
 	color:black;
 }
 .box {
 	width:40%; float: left; padding: 10px
+}
+
+#share{
+margin-left: 250px;
 }
